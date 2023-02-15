@@ -1,0 +1,69 @@
+FFFFFFFF
+======================================================================
+FAIL: test_delete_nonexistent (__main__.TestAssignment2.test_delete_nonexistent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 101, in test_delete_nonexistent
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (delete non-existent key)')
+AssertionError: 500 != 503 : Did not return status 503 (delete non-existent key)
+
+======================================================================
+FAIL: test_get_nonexistent (__main__.TestAssignment2.test_get_nonexistent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 92, in test_get_nonexistent
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (get non-existent key)')
+AssertionError: 500 != 503 : Did not return status 503 (get non-existent key)
+
+======================================================================
+FAIL: test_malformed_delete (__main__.TestAssignment2.test_malformed_delete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 65, in test_malformed_delete
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (malfurmed delete)')
+AssertionError: 500 != 503 : Did not return status 503 (malfurmed delete)
+
+======================================================================
+FAIL: test_malformed_get (__main__.TestAssignment2.test_malformed_get)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 56, in test_malformed_get
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (malfurmed get)')
+AssertionError: 500 != 503 : Did not return status 503 (malfurmed get)
+
+======================================================================
+FAIL: test_malformed_put (__main__.TestAssignment2.test_malformed_put)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 47, in test_malformed_put
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (malfurmed put)')
+AssertionError: 500 != 503 : Did not return status 503 (malfurmed put)
+
+======================================================================
+FAIL: test_put_get (__main__.TestAssignment2.test_put_get)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 110, in test_put_get
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (simple put then get: put)')
+AssertionError: 500 != 503 : Did not return status 503 (simple put then get: put)
+
+======================================================================
+FAIL: test_put_oversized_key (__main__.TestAssignment2.test_put_oversized_key)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 74, in test_put_oversized_key
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (put oversized key)')
+AssertionError: 500 != 503 : Did not return status 503 (put oversized key)
+
+======================================================================
+FAIL: test_put_oversized_value (__main__.TestAssignment2.test_put_oversized_value)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/amin/Downloads/CSE 138/Assignment_2/grading/test_assignment2_follower-error.py", line 83, in test_put_oversized_value
+    self.assertEqual(res.status_code, 503, msg='Did not return status 503 (put oversized value)')
+AssertionError: 500 != 503 : Did not return status 503 (put oversized value)
+
+----------------------------------------------------------------------
+Ran 8 tests in 73.563s
+
+FAILED (failures=8)
